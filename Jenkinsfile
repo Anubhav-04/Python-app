@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('') {
+        stage('Testing Files') {
             steps {
-                sh 'python3 app.py'
+                sh 'python3 app.test.py'
             }
         }
     }
