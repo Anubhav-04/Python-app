@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Application run') {
+        stage('') {
             steps {
                 sh 'python3 app.py'
             }

@@ -1,12 +1,14 @@
-def Calculate(a,b):
-    add = a + b
-    sub = a - b
-    mul = a * b
-    try:
-        div = a / b
-    except:
-        div = ZeroDivisionError
+class Calculate:
+    def add(self,a,b):
+        return a + b
+    def subtract(self,a,b):
+        return a - b
+    def Multiply(self,a,b):
+        return a * b
+    def Division(self,a,b):
+        try:
+            return a/b
+        except:
+            return ZeroDivisionError
 
-    return f"Add :- {add}, Subtract :- {sub}, Multiply :- {mul}, Division :- {div}"
-
-print(Calculate(20,0))
+c1 = Calculate()
